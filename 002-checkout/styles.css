@@ -1,0 +1,299 @@
+
+#logo {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    margin-top: 10px;
+}
+
+body {
+    background-image: url("./cacao.jpg");
+    background-size: cover;
+}
+
+.jumbotron.jumbotron-fluid {
+    background-color: #4E2A10;
+    height: 250px;
+    margin-top: -20px;
+}
+
+nav {
+    background-color: #69401D;
+    
+}
+
+#main {
+    background-color:#FFFFFF;
+    padding: 0px;
+}
+
+#checkout {
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0px;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    background-color: #D8D8D8;
+    font-family: 'Open Sans', sans-serif;
+    color: #4E2A10;
+}
+
+form#card {
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 50px;
+}
+
+#order_summary {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+h2 {
+    font-family: 'Cardo', serif;
+    font-size: 48px;
+    color: #4E2A10;
+    letter-spacing: 3.38px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 30px;
+}
+
+progress::-webkit-progress-bar {
+    border-radius: 25px;
+}
+
+progress {
+    border: 2px solid;
+    border-color: #69401D;
+    border-radius: 25px;
+    background-color: #FFFFFF;
+}
+
+progress[value] {
+    background-image: url("./chocolate.jpg");
+}
+
+progress[background] {
+    background-color: #FFFFFF;
+}
+
+progress[value]::-webkit-progress-value{
+    background-image: url("./chocolate.jpg");
+    background-size: cover;
+}
+
+#progress {
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.progress[value]::-webkit-progress-bar {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: #69401D;
+  
+}
+
+.progress[value]::-webkit-progress-value {
+    background-image: url("./chocolate.jpg");
+    background-size: cover;
+    border-left-style: hidden;
+}
+
+
+
+progress {
+    width: 40%;
+    
+}
+
+h3 {
+    font-family: 'Cardo', serif;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 1.69px;
+    color: #4E2A10;
+    
+}
+
+#progress_caption {
+    position: relative;
+    font-family: 'Cardo', serif;
+    font-weight: 800px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: #4E2A10;
+    padding: 0px;
+    margin-top: 5px;
+    margin-left: 190px;
+}
+
+
+
+
+
+td {
+    color: #A96846;
+}
+
+.container#maincon {
+    margin-top: -32px;
+}
+
+#lock {
+    width: 20;
+    margin-top: 50px;
+    margin-left: 35px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+#payment_caption {
+    float: left;
+    margin-left: 10px;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    color: #4E2A10;
+    font-size: 18px;
+    letter-spacing: px;
+    font-weight: 800px; 
+    font-family: 'Cardo', sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+
+
+#caption {
+    margin-bottom: 30px;
+    height: 10px;
+}
+
+button.btn.btn-primary {
+    background-color: #4E2A10;
+    width: 100%;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+table {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.active {
+    //background-color: #835227;
+}
+
+a {
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 3px;
+}
+
+ul.nav.navbar-nav {
+    float: none;
+    margin: 0 auto;
+    text-align:center;
+}
+
+#border {
+    border-top: 2px solid;
+    border-color: #835227;
+    margin-bottom: px;
+}
+
+.total {
+    font-size: 20px;
+}
+
+ul.nav.navbar-nav {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   text-align: center;
+}
+
+li {
+    display: inline-block;
+    text-align: center;
+    float: none;
+}
+
+nav.navbar.navbar-light.bg-faded {
+    text-align: center;
+}
+
+li.nav-item {
+    display: inline-block;
+    float:none;
+}
+
+input.form-control#cardnumber {
+    background: url("./Visa.png") no-repeat scroll 490px 4px/44.8px 28px, url("./AMEX.png") no-repeat scroll 590px 4px/44.8px 28px, url("./MC.png") no-repeat scroll 540px 4px/44.8px 28px, url("./Discover.png") no-repeat scroll 640px 4px/44.8px 28px;
+    background-color: #FFFFFF;
+    border: 1px solid;
+    border-color: #B0B0B0;
+}
+
+.form-inline {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#half {
+    margin-right: 20px;
+}
+
+.tooltip-inner {
+    background-color: #F00;
+    width: 120px;
+}
+
+.tooltip-arrow {
+    background-color: #F00;
+}
+
+#navcon {
+    margin: 0 auto;
+    text-align: center;
+    width: 480px;
+}
+
+div {
+    
+}
+
+#active {
+    color: #FFFFFF;
+}
+
+#submit {
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+.nav-link {
+    font-size: 14px;
+}
+
+.table {
+    font-size: 14px;
+}
+
+.thead-default {
+    //background-color: #DDB499 !important;
+    background-color: #FFFFFF !important;
+    color: #A96846 !important;
+    font-weight: 800;
+    letter-spacing: 1px;
+}

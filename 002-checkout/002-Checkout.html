@@ -1,0 +1,158 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        
+        <!--bootstrap CSS-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Cardo|Open+Sans" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+        
+        <nav class="navbar navbar-light">
+            <ul class="nav navbar-nav mx-auto">
+                <div class="container" id="navcon">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT US</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" id="active" href="#">BUY ONLINE<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">VISIT US</a>
+                </li>
+                </div>
+            </ul>
+        </nav>
+
+        
+        <div class="jumbotron jumbotron-fluid">
+            <img src="./logo.png" alt="logo" id="logo">  
+        </div>
+        
+        <div class="container" id="maincon">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10" id="main">
+                    <div id="progress">
+                        
+                        <progress value="75" max="100" aria-describedby="progress_caption"></progress>
+                        <div class="text-xs" id="progress_caption">PAYMENT</div>
+                        
+                    </div>
+                    
+                    <h2>Checkout</h2>
+
+                    <div id="order_summary">
+                        
+                        <h3>Your Order</h3>
+                        <div id="border"></div>
+                        <table class="table">
+                            <thead>
+                                <tr id='first'>
+                                    <th>Item</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2016 Advent Calendar</td>
+                                    <td>$50.00</td>
+                                </tr>
+                                <tr>
+                                    <th>Tax</th>
+                                    <td>$7.50</td>
+                                </tr>
+                                <tr>
+                                    <th>Shipping</th>
+                                    <td>$5.00</td>
+                                </tr>
+                                <tr class="thead-default">    
+                                    <th class="thead-default">TOTAL</th>
+                                    <th class="thead-default">$62.50</th>
+                                </tr>
+                            
+                            </tbody>
+                        
+                        </table>
+                    
+                    
+                    </div>
+                    
+
+                    <div id="checkout">
+                        <div id="caption">
+                            <img src="./locked.png" id="lock">
+                            <p id="payment_caption">Payment by credit card</p>
+                        </div>
+                       
+                        <form id="card">
+                            <div class="form-group">
+                                <label for="name">Cardholder name</label>
+                                <input type="text" class="form-control" id="name" data-toggle="tooltip" data-placement="right" title="Please enter the cardholder's name.">
+                            </div>
+                            <div class="form-group">
+                                <label for="cardnumber">Credit card number</label>
+                                <input type="text" class="form-control" id="cardnumber">
+                            </div>
+                            
+                        </form>
+                        <form class="form-inline">
+                            <div class="form-group" id="half">
+                                <label for="expiration">Expiration date</label>
+                                <input type="text" placeholder="MMYY" class="form-control" id="expiration" data-toggle="tooltip" data-placement="right" title="Please enter a valid expiration date in MMYY format.">
+                            </div>
+                            <div class="form-group">
+                                <label for="security">Security code</label>
+                                <input type="text" class="form-control" id="security">
+                                
+                                <a tabindex="0" role="button" class="popover-dismiss" data-toggle="popover" data-trigger="focus" title="Security code" data-content='<img src="./security_code_sample.png" />' data-html="true">
+                                    <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                                </a>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                        </form>
+
+                    </div>
+                    
+                    
+                    
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            
+            
+            
+        
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+     <!-- Bootstrap script files -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+        <script src="./script.js"></script>
+    </body>
+
+</html>
