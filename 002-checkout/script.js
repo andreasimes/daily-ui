@@ -1,10 +1,16 @@
+/**** script file for Daily UI challenge 002 - credit card checkout ****/
+// December 2016
+// Andrea Simes
 
-var card_type;
+
+/** Script used to determine credit card type and validate input fields **/
+
+/* CREDIT CARD */
+
+var card_type; //global to hold credit card type
 
 var cards = {"amex":[[34],[37]], "discover":[[6011],[622126, 622925],[644, 649], [65]], "mastercard":[[50, 55]], "visa":[[4]] }
 var cardnames = Object.keys(cards);
-
-//console.log(Object.keys(cards));
 
 $('input#cardnumber').on('input', function() { 
     var cardnames = Object.keys(cards);
@@ -21,28 +27,30 @@ $('input#cardnumber').on('input', function() {
          $("input#cardnumber").css('background', 'url("./Visa.png") no-repeat scroll 490px 4px/44.8px 28px, url("./AMEX.png") no-repeat scroll 590px 4px/44.8px 28px, url("./MC.png") no-repeat scroll 540px 4px/44.8px 28px, url("./Discover.png") no-repeat scroll 640px 4px/44.8px 28px');
     }
     if (result == "mastercard"){
-        $("input#cardnumber").css('background', 'url("./MC.png") no-repeat scroll 640px 4px/44.8px 28px');
+        $("input#cardnumber").css('background', 'url("./MC.png") no-repeat scroll 640px 4px/44.8px 28px'); //reset field with corresponding card icon
     }
     if (result == "visa"){
-         $("input#cardnumber").css('background', 'url("./Visa.png") no-repeat scroll 640px 4px/44.8px 28px');
+         $("input#cardnumber").css('background', 'url("./Visa.png") no-repeat scroll 640px 4px/44.8px 28px'); //reset field with corresponding card icon
     }
     if (result == "discover"){
-         $("input#cardnumber").css('background', 'url("./Discover.png") no-repeat scroll 640px 4px/44.8px 28px');
+         $("input#cardnumber").css('background', 'url("./Discover.png") no-repeat scroll 640px 4px/44.8px 28px'); //reset field with corresponding card icon
     }
     if (result == "amex"){
-         $("input#cardnumber").css('background', 'url("./AMEX.png") no-repeat scroll 640px 4px/44.8px 28px');
+         $("input#cardnumber").css('background', 'url("./AMEX.png") no-repeat scroll 640px 4px/44.8px 28px'); //reset field with corresponding card icon
     }
-    $("input#cardnumber").css('background-color', '#FFFFFF');
+    $("input#cardnumber").css('background-color', '#FFFFFF'); //reset default format
     $("input#cardnumber").css('border', '1px solid');
     $("input#cardnumber").css('border-color', '#B0B0B0');
 });
 
+/* NAME */
+
 $('input#name').on('input', function() {
     console.log("typed something");
     console.log($('input#name').val());
-    if($('input#name').val() == ""){
-        $("input#name").css('background', 'url("./x.png") no-repeat scroll 660px 8px/19.2px 19.25px');
-        $('input#name').tooltip();
+    if($('input#name').val() == ""){ //no input
+        $("input#name").css('background', 'url("./x.png") no-repeat scroll 660px 8px/19.2px 19.25px'); //display "x" icon
+        $('input#name').tooltip(); //instantiate tooltip to help user deal with error
     }
     else {
         $("input#name").css('background', '');
@@ -51,13 +59,15 @@ $('input#name').on('input', function() {
     $("input#name").css('background-color', '#FFFFFF');
 });
 
+/* EXPIRATION DATE */
+
 
 $('input#expiration').on('input', function() {
     console.log("typed something");
     console.log($('input#name').val());
-    if($('input#expiration').val() == "" || $('input#expiration').val().length > 4 || $('input#expiration').val().length < 4){
-        $('input#expiration').css('background', 'url("./x.png") no-repeat scroll 165px 8px/19.2px 19.25px');
-        $('input#expiration').tooltip();
+    if($('input#expiration').val() == "" || $('input#expiration').val().length > 4 || $('input#expiration').val().length < 4){ //invalid inputs
+        $('input#expiration').css('background', 'url("./x.png") no-repeat scroll 165px 8px/19.2px 19.25px'); //"x" icon
+        $('input#expiration').tooltip(); //instantiate tooltip to help user deal with error
     }
     else {
         $('input#expiration').css('background', '');
@@ -66,12 +76,14 @@ $('input#expiration').on('input', function() {
     $('input#expiration').css('background-color', '#FFFFFF');
 });
 
+/* SECURITY CODE */
+
 $('input#security').on('input', function() {
     console.log("typed something");
     console.log($('input#name').val());
-    if($('input#security').val() == ""){
-        $('input#security').css('background', 'url("./x.png") no-repeat scroll 165px 8px/19.2px 19.25px');
-        $('input#security').tooltip();
+    if($('input#security').val() == ""){ //no input
+        $('input#security').css('background', 'url("./x.png") no-repeat scroll 165px 8px/19.2px 19.25px'); //"x" icon
+        $('input#security').tooltip(); //instantiate tooltip to help user deal with error
     }
     else {
         $('input#security').css('background', '');
@@ -80,34 +92,11 @@ $('input#security').on('input', function() {
     $('input#security').css('background-color', '#FFFFFF');
 });
 
-var img = '<img src="./security_code_sample.png" />';
 
 $(function () {
     $('[data-toggle="popover"]').popover();
-    $('[data-toggle="popover"]').popover({ title: 'Look! A bird!', content: img, html:true });
 });
 
-$('.popover-dismiss').popover({
-  trigger: 'focus'
-});
-
-$('.fa').popover({
-  trigger: 'focus'
-});
-
-
-
-
-$('[data-toggle="popover"]').popover({ title: 'Look! A bird!', content: img, html:true });
-
-/*$(function () {
-  $('[data-toggle="tooltip"]').tooltip();
-  $('[data-toggle="tooltip"]').tooltip('toggle');
-})*/
-
-/*var test= $("input#cardnumber").val();
-console.log("test" + test)
-console.log(range(10,20));*/
 
 function cardQuerier(input) {
     var cardname;

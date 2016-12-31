@@ -29,10 +29,10 @@ nav {
 
 #checkout {
     width: 100%;
+    padding-top: 10px;
     padding-left: 100px;
     padding-right: 100px;
     margin: 0px;
-    margin-bottom: 40px;
     padding-bottom: 10px;
     background-color: #D8D8D8;
     font-family: 'Open Sans', sans-serif;
@@ -40,15 +40,16 @@ nav {
 }
 
 form#card {
-    padding-top: 40px;
+    padding-top: 30px;
     padding-left: 30px;
     padding-right: 30px;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 #order_summary {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-bottom: 45px;
 }
 
 h2 {
@@ -56,8 +57,10 @@ h2 {
     font-size: 48px;
     color: #4E2A10;
     letter-spacing: 3.38px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 10px;
+    margin-top: 20px;
     margin-bottom: 30px;
 }
 
@@ -86,7 +89,7 @@ progress[value]::-webkit-progress-value{
 }
 
 #progress {
-    margin-top: 10px;
+    margin-top: 15px;
     text-align: center;
     padding: 10px;
 }
@@ -114,9 +117,11 @@ progress {
 
 h3 {
     font-family: 'Cardo', serif;
-    font-size: 32px;
+    color: #A96846;
+    font-size: 16px;
     font-weight: 800;
-    letter-spacing: 1.69px;
+    //letter-spacing: 1.69px;
+    letter-spacing: 2px;
     color: #4E2A10;
     
 }
@@ -147,7 +152,7 @@ td {
 
 #lock {
     width: 20;
-    margin-top: 50px;
+    margin-top: 28px;
     margin-left: 35px;
     float: left;
     margin-bottom: 20px;
@@ -156,23 +161,20 @@ td {
 #payment_caption {
     float: left;
     margin-left: 10px;
-    margin-top: 45px;
+    margin-top: 30px;
     margin-bottom: 20px;
     color: #4E2A10;
-    font-size: 18px;
-    letter-spacing: px;
+    font-size: 16px;
+    letter-spacing: 2px;
     font-weight: 800px; 
     font-family: 'Cardo', sans-serif;
-    font-size: 24px;
-    margin-bottom: 15px;
+    //font-size: 24px;
+    margin-bottom: 20px;
 }
 
 
 
-#caption {
-    margin-bottom: 30px;
-    height: 10px;
-}
+
 
 button.btn.btn-primary {
     background-color: #4E2A10;
@@ -204,6 +206,7 @@ ul.nav.navbar-nav {
 #border {
     border-top: 2px solid;
     border-color: #835227;
+    //border-color: #A96846;
     margin-bottom: px;
 }
 
@@ -241,6 +244,7 @@ input.form-control#cardnumber {
 }
 
 .form-inline {
+    padding-top: 5px;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -250,12 +254,12 @@ input.form-control#cardnumber {
 }
 
 .tooltip-inner {
-    background-color: #F00;
+    background-color: ;
     width: 120px;
 }
 
 .tooltip-arrow {
-    background-color: #F00;
+    color: #F00 !important;
 }
 
 #navcon {
@@ -264,16 +268,15 @@ input.form-control#cardnumber {
     width: 480px;
 }
 
-div {
-    
-}
+
 
 #active {
     color: #FFFFFF;
 }
 
 #submit {
-    margin-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 
@@ -296,4 +299,12 @@ div {
     color: #A96846 !important;
     font-weight: 800;
     letter-spacing: 1px;
+}
+
+#caption {
+    margin-bottom: 40px; 
+}
+
+#secu {
+    float: right;
 }
