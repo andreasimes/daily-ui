@@ -30,8 +30,8 @@ nav {
 #checkout {
     width: 100%;
     padding-top: 10px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
     margin: 0px;
     padding-bottom: 10px;
     background-color: #D8D8D8;
@@ -47,8 +47,8 @@ form#card {
 }
 
 #order_summary {
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: 210px;
+    padding-right: 210px;
     margin-bottom: 45px;
 }
 
@@ -57,11 +57,11 @@ h2 {
     font-size: 48px;
     color: #4E2A10;
     letter-spacing: 3.38px;
-    padding-left: 120px;
+    padding-left: 205px;
     padding-right: 120px;
     padding-top: 10px;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 progress::-webkit-progress-bar {
@@ -152,7 +152,7 @@ td {
 
 #lock {
     width: 20;
-    margin-top: 28px;
+    margin-top: 30px;
     margin-left: 35px;
     float: left;
     margin-bottom: 20px;
@@ -164,10 +164,10 @@ td {
     margin-top: 30px;
     margin-bottom: 20px;
     color: #4E2A10;
-    font-size: 16px;
-    letter-spacing: 2px;
+    font-size: 20px;
+    //letter-spacing: 2px;
     font-weight: 800px; 
-    font-family: 'Cardo', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     //font-size: 24px;
     margin-bottom: 20px;
 }
@@ -237,7 +237,7 @@ li.nav-item {
 }
 
 input.form-control#cardnumber {
-    background: url("./Visa.png") no-repeat scroll 490px 4px/44.8px 28px, url("./AMEX.png") no-repeat scroll 590px 4px/44.8px 28px, url("./MC.png") no-repeat scroll 540px 4px/44.8px 28px, url("./Discover.png") no-repeat scroll 640px 4px/44.8px 28px;
+    //background: url("./Visa.png") no-repeat scroll 290px 4px/44.8px 28px, url("./AMEX.png") no-repeat scroll 340px 4px/44.8px 28px, url("./MC.png") no-repeat scroll 390px 4px/44.8px 28px, url("./Discover.png") no-repeat scroll 440px 4px/44.8px 28px;
     background-color: #FFFFFF;
     border: 1px solid;
     border-color: #B0B0B0;
@@ -307,4 +307,12 @@ input.form-control#cardnumber {
 
 #secu {
     float: right;
+}
+
+#security {
+    width: 70px;
+}
+
+#expiration {
+    width: 90px;
 }
