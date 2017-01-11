@@ -116,7 +116,14 @@ function numberSpacer(num){
             console.log(y + " " + num);
             console.log(y + "charAt(y)" + num.charAt(y));
             if (y%5 == 3){
-                num = num.substr(0, y+1) + " " + num.substr(y+1, num.length);
+                if(num.charAt(y+1)==" " || num.charAt(y+1)== undefined ){
+                    console.log("if");
+                    num = num.substr(0, y) + " " + num.substr(y, num.length);
+                }
+                else{
+                    num = num.substr(0, y+1) + " " + num.substr(y+1, num.length);
+                }
+                
             } 
         }
     }
